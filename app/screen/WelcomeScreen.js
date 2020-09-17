@@ -1,7 +1,13 @@
 import React from "react";
-import { StyleSheet, ImageBackground, View, Image, Text } from "react-native";
+import { StyleSheet, ImageBackground, View, Image, Text, Button } from "react-native";
 
 function WelcomeScreen(props) {
+
+  const pressHandler = () => {
+    //props.navigation.navigate('ViewImageScreen')
+    props.navigation.push('ViewImageScreen')
+  }
+
   return (
     <ImageBackground
       style={styles.background}
@@ -12,10 +18,10 @@ function WelcomeScreen(props) {
         <Text style={styles.text}>Sell What You Don't Need</Text>
       </View>
       <View style={styles.loginButton}>
-        <Text style={styles.buttonText}>Login</Text>
+        <Text style={styles.buttonText} onPress={pressHandler}>Login</Text>
       </View>
       <View style={styles.registerButton}>
-        <Text style={styles.buttonText}>Register</Text>
+        <Text style={styles.buttonText} onPress={pressHandler}>Register</Text>
       </View>
     </ImageBackground>
   );
