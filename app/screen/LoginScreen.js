@@ -1,16 +1,19 @@
 import React from "react";
-import { StyleSheet, Image, View } from "react-native";
+import { StyleSheet, Image, View, Text } from "react-native";
 
-function ViewImageScreen() {
+function LoginScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.closeIcon}></View>
       <View style={styles.deleteIcon}></View>
-      <Image
-        resizeMode="contain"
-        style={styles.image}
-        source={require("../assets/chair.jpg")}
-      />
+
+      <View>
+        <Image
+          resizeMode="contain"
+          style={styles.image}
+          source={require("../assets/chair.jpg")}
+        />
+      </View>
     </View>
   );
 }
@@ -40,6 +43,15 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
   },
+  buttonText: {
+    fontWeight: "bold",
+    fontSize: 120,
+    color: "brown",
+  },
+  text: {
+    color: "darkgreen",
+    fontSize: 120,
+  },
 });
 
-export default ViewImageScreen;
+export default LoginScreen;
