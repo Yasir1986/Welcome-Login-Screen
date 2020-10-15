@@ -1,7 +1,7 @@
 
 Welcome login and Register screen in react native
 
-1) Git clone the repo
+1)Git clone the repo
 
 2)npm install
 
