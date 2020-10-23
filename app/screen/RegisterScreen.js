@@ -1,5 +1,12 @@
 import React, { Component } from "react";
-import { Alert, Button, TextInput, View, StyleSheet, Image } from "react-native";
+import {
+  Alert,
+  Button,
+  TextInput,
+  View,
+  StyleSheet,
+  Image,
+} from "react-native";
 
 export default class App extends Component {
   constructor(props) {
@@ -20,8 +27,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        
-          {/* <Image
+        {/* <Image
             resizeMode="contain"
             style={styles.images}
             source={require("../assets/background.jpg")}
@@ -45,7 +51,6 @@ export default class App extends Component {
           style={styles.input}
           onPress={this.onLogin.bind(this)}
         />
-        
       </View>
     );
   }
@@ -66,8 +71,4 @@ const styles = StyleSheet.create({
     borderColor: "black",
     marginBottom: 10,
   },
-  // images: {
-  //   height: "100%",
-  //   width: "100%"
-  // }
 });
